@@ -1,0 +1,112 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+    padding: 40px;
+}
+.button{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 80px;
+    background: #002fff;
+    border: none;
+    border-radius: 5px;
+}
+.button:hover{
+    color: #002fff;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.task{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    align-items: center;
+    width: 700px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Space between checkbox & delete button */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    width: 100%;
+    min-width: 150px;
+    max-width: 400px; /* Adjust based on container size */
+    overflow: hidden;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /*  Allow text to wrap */
+    width: 80%;
+    padding-left: 10px;
+    
+}
+.checkbox:hover{
+    /* background: #716666; */
+    background-color: #c6c6c6;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+h3 {
+    word-wrap: break-word;  /* Ensure long words wrap */
+    overflow-wrap: break-word;
+    white-space: normal; /* Allow multi-line text */
+    max-width: 100%;
+}
+.doned-task-text{
+    text-decoration: line-through;
+    color: rgb(138, 138, 138);
+}
+
+.done-icon{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+.done-icon-fill{
+    color: rgb(49, 243, 0);
+    font-size: 20px;
+}
+.delete-icon{
+    font-size: 20px;
+}
+
+

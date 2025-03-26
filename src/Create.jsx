@@ -6,7 +6,7 @@ const Create = () => {
   const [task, setTask]=useState()
 
   const handleAdd = ()=> {
-    axios.post('http://localhost:3001/add', {task:task})
+    axios.post('http://localhost:4000/add', {task:task})
     .then(res=> {
       location.reload()  /* Automatically Reload after task add */
     })
